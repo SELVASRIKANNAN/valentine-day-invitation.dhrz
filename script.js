@@ -17,3 +17,17 @@ document.getElementById('nooo').addEventListener('click', () => {
     document.getElementById('nooo').style.left = leftPos + "%"
     document.getElementById('nooo').style.bottom = bottomPos + "%"
 })
+function moveNo() {
+  const noBtn = document.getElementById("noBtn");
+  const x = Math.random() * 200 - 100;
+  const y = Math.random() * 200 - 100;
+
+  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function yesClick() {
+  const name = document.getElementById("nameInput").value || "My Love";
+  document.body.innerHTML = `
+    <h1 style="margin-top:40vh;">Yayyy 💖 ${name}, I knew it 😍</h1>
+  `;
+}
