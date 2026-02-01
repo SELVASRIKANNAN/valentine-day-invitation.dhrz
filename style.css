@@ -85,3 +85,56 @@ span{
     font-family: "Bodoni MT Black",sans-serif;
     color:pink;
 }
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin: 15px 0;
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background: #00e676;
+}
+
+#noBtn {
+  background: #ff1744;
+  position: relative;
+}
